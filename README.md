@@ -25,21 +25,7 @@ This website includes:
 ---
 
 ## 🗂️ **Project File Structure**
-    src/
-┣ components/
-┃ ┣ Navbar.jsx
-┃ ┣ HeroSection.jsx
-┃ ┣ LenderBorrowerSection.jsx
-┃ ┣ AISafetySection.jsx
-┃ ┣ OffersDataSection.jsx
-┃ ┣ LoanTypesSection.jsx
-┃ ┣ TestimonialsSection.jsx
-┃ ┣ FAQsSection.jsx
-┃ ┣ EasyStepsSection.jsx
-┃ ┗ Footer.jsx
-┣ App.jsx
-┣ main.jsx
-┣ index.css
+<pre lang="markdown"> ``` src/ ┣ components/ ┃ ┣ Navbar.jsx ┃ ┣ HeroSection.jsx ┃ ┣ LenderBorrowerSection.jsx ┃ ┣ AISafetySection.jsx ┃ ┣ OffersDataSection.jsx ┃ ┣ LoanTypesSection.jsx ┃ ┣ TestimonialsSection.jsx ┃ ┣ FAQsSection.jsx ┃ ┣ EasyStepsSection.jsx ┃ ┗ Footer.jsx ┣ App.jsx ┣ main.jsx ┣ index.css ``` </pre>
 
 
 - **components/** – Contains all React components for homepage subsections.
@@ -49,72 +35,64 @@ This website includes:
 
 ---
 
+
 ## 👨‍💻 **Developer Setup Guide**
 
-### ✅ **1. Clone the repository**
+###  **1. Clone the repository**
 
 ```bash
 git clone https://github.com/rohityadurudra/Kathakaal.git
-cd Kathakaal
+cd Kathakaal 
+```
 
+###  **2. Install dependencies**
+```bash
 npm install
-
+```
+###  **3. Run the website locally**
+```bash
 npm run dev
 
-The website will be available at: http://localhost:5173
+The website will be available at:
 
-## 🔄 **Git Workflow for Developers**
+http://localhost:5173
 
-### **Pulling and Pushing Changes**
+```
+## 👨‍💻 **Git Workflow for Developers**
 
-Follow these steps each time you work on the project:
+ **Pulling and pushing changes**
 
-1. **Check your current branch**
-
-   ```bash
-   git branch
-Pull the latest changes from remote
-
-bash
-Copy
-Edit
+#### 1. Check your current branch 
+```bash
+git branch
+```
+#### 2. Pull latest changes from remote
+```bash
 git pull origin main
-📝 If you see an unrelated histories error, use:
+```
+#### 3. Make your code changes
+Modify components, styles, or content as per tasks assigned.
 
-bash
-Copy
-Edit
-git pull origin main --allow-unrelated-histories
-Make your code changes
-
-Modify components, styles, or content as per your assigned tasks.
-
-Stage your changes
-
-bash
-Copy
-Edit
+#### 4. Stage your changes
+```bash
 git add .
-Commit your changes with a clear message
-
-bash
-Copy
-Edit
+```
+#### 5. Commit your changes
+```bash
 git commit -m "Your descriptive commit message"
-Push your changes to GitHub
-
-bash
-Copy
-Edit
+```
+#### 6. Push to GitHub
+```bash
 git push origin main
-⚠️ Important Notes
+```
+## ⚠️ **Important Notes**
 Always pull before starting work to avoid merge conflicts.
 
-Write clear, descriptive commit messages explaining what you changed.
+Write clear, descriptive commit messages.
 
-Maintain component-specific CSS Modules for clean, organised code.
+Maintain component-specific CSS Modules for clean code.
 
-If merging causes conflicts, resolve them before pushing to avoid breaking the main branch.
+If merging causes conflicts, resolve them before pushing.
 
 
 
