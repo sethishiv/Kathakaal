@@ -6,13 +6,13 @@ import Borrower from './pages/Borrower';
 
 const App = () => {
   return (
-    <Router>
+    
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/borrower" element={<Borrower />} />
         {/* Add more routes as needed */}
       </Routes>
-    </Router>
+   
   );
 };
 
