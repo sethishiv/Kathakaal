@@ -60,7 +60,7 @@ http://localhost:5173
 ```
 ## 👨‍💻 **Git Workflow for Developers**
 
- **Pulling and pushing changes**
+ **Pulling and pushing the changes**
 
 #### 1. Check your current branch 
 ```bash
