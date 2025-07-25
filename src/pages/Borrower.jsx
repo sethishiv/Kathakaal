@@ -8,6 +8,7 @@ import CashLoanEnrollmentSection from '../borrowerComponents/CashLoanEnrollmentS
 import AISafetySection from '../borrowerComponents/AISafetySection';
 import BenefitsSection from '../borrowerComponents/BenefitsSection';
 import FAQsSection from '../borrowerComponents/FAQsSection.jsx';
+import TestimonialsSection from '../components/TestimonialsSection'; 
 
 const Borrower = () => {
   return (
