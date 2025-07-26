@@ -2,7 +2,7 @@ import React from 'react';
 
 const FAQsSection = () => {
   return (
-    <section>
+    <section id="faqs">
       <h2>Frequently Asked Questions</h2>
       <div>
         <h4>How long does approval take?</h4>

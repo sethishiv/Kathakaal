@@ -2,7 +2,7 @@ import React from 'react';
 
 const EasyStepsSection = () => {
   return (
-    <section>
+    <section id="easy-steps">
       <h2>Easy Steps to Use Our Platform</h2>
       <ol>
         <li>Sign up</li>
