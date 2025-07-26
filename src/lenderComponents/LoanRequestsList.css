@@ -1,0 +1,79 @@
+.loan-requests-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.loan-heading {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.no-loans-text {
+  text-align: center;
+  color: #666;
+  font-size: 16px;
+}
+
+.loan-cards-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.loan-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.loan-info {
+  flex-grow: 1;
+}
+
+.loan-amount {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.loan-interest {
+  font-size: 16px;
+  color: #555;
+  margin: 6px 0;
+}
+
+.loan-status {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.loan-status.approved {
+  color: green;
+}
+
+.loan-status.pending {
+  color: orange;
+}
+
+.approve-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.approve-button:hover {
+  background-color: #218838;
+}

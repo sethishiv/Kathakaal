@@ -1,0 +1,81 @@
+.loan-request-section {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.loan-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.loan-form input {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+}
+
+.loan-form input:focus {
+  border-color: #007bff;
+}
+
+.loan-form button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.loan-form button:hover {
+  background-color: #0056b3;
+}
+
+.subheading {
+  margin-top: 30px;
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.loan-request-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+.loan-request-item {
+  background: #fff;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.approved {
+  color: green;
+}
+
+.pending {
+  color: orange;
+}
