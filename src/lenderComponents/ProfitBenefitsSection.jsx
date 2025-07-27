@@ -3,7 +3,9 @@ import React from 'react';
 
 const ProfitBenefitsSection = () => {
   return (
+
     <section id="profit-benefits" className="profit-benefits">
+
       <h2>Why Lend Through Us?</h2>
       <ul>
         <li>Higher returns than savings or FDs</li>

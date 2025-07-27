@@ -4,6 +4,7 @@ import './HeroSection.css';
 const HeroSection = () => {
   return (
     <section id="hero" className="hero-section">
+
       {/* SVG Decorative Top Shapes */}
       <svg className="hero-decor-top" viewBox="0 0 1440 150" xmlns="http://www.w3.org/2000/svg">
         <path fill="#cce5ff" d="M0,0 C400,150 1040,0 1440,120 L1440,0 L0,0 Z" />
