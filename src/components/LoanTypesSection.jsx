@@ -2,7 +2,7 @@ import React from 'react';
 
 const LoanTypesSection = () => {
   return (
-    <section>
+    <section id="loan-types">
       <h2>Explore Loan Types</h2>
       <ul>
         <li>Personal Loan</li>

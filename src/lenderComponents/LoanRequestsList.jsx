@@ -3,7 +3,8 @@ import './LoanRequestsList.css'; // i have included css file in this folder only
 
 const LoanRequestsList = ({ loanRequests, approveLoan }) => {
   return (
-    <section className="loan-requests-container">
+
+    <section id="loan-requests" className="loan-requests-container">
       <h2 className="loan-heading">Loan Requests</h2>
       {loanRequests.length === 0 ? (
         <p className="no-loans-text">No loan requests available at the moment.</p>

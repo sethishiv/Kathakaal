@@ -3,7 +3,7 @@ import './LenderBorrowerSection.css';
 
 const LenderBorrowerSection = () => {
   return (
-    <section className="lender-borrower-section">
+    <section id="lender-borrower" className="lender-borrower-section">
       <div className="section-header">
         <h2>Empowering Lenders & Borrowers</h2>
         <p>Your one-stop platform for smarter financial collaboration.</p>

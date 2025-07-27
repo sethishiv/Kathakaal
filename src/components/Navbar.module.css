@@ -35,3 +35,58 @@
 .navLinks li a:hover {
   color: #004aad; /* Brand color on hover */
 }
+
+.dropdown {
+  position: relative;
+}
+
+.dropdownContent {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 180px;
+  background-color: white;
+  list-style: none;
+  padding: 0.5rem 0;
+  margin: 0;
+  z-index: 100;
+  border-radius: 0.5rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.dropdownContent li {
+  margin: 0;
+}
+
+.dropdown:hover .dropdownContent {
+  display: block;
+}
+
+.dropdownContent a {
+  text-decoration: none;
+  display: block;
+  padding: 0.75rem 1rem;
+  color: #333333;
+  font-weight: 500;
+  transition: background-color 0.2s, color 0.2s;
+  border-radius: 0.25rem;
+}
+
+.dropdownContent a:hover {
+  background-color: #e6f0ff; 
+  color: #004aad; 
+}

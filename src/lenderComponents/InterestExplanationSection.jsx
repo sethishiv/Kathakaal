@@ -3,7 +3,9 @@ import React from 'react';
 
 const InterestExplanationSection = () => {
   return (
-    <section className="interest-info">
+    
+    <section id="interest-explanation" className="interest-info">
+
       <h2>How Does Interest Work?</h2>
       <p>
         When you approve a loan, the borrower agrees to repay you with an agreed-upon interest rate.

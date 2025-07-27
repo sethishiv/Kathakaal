@@ -2,7 +2,7 @@ import React from 'react';
 
 const LoanCategoriesSection = () => {
   return (
-    <section>
+    <section id="loan-categories">
       <h2>Loan Categories</h2>
       <div>
         <div>

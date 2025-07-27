@@ -14,7 +14,9 @@ const LoanRequestFormSection = ({ loanRequests, addLoanRequest }) => {
   };
 
   return (
-    <section className="loan-request-section">
+    
+    <section id="loan-request-form" className="loan-request-section">
+
       <h2 className="section-title">Apply for a Loan</h2>
       <form className="loan-form" onSubmit={handleSubmit}>
         <input

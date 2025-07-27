@@ -2,7 +2,7 @@ import React from 'react';
 
 const FAQsSection = () => {
   return (
-    <section>
+    <section id="faqs">
       <h2>FAQs</h2>
       <div>
         <h3>Question 1?</h3>
