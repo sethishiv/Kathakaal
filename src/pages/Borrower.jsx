@@ -14,13 +14,13 @@ const Borrower = () => {
   return (
     <>
       <Navbar />
-      <BorrowerHeroSection />
-      <LoanCategoriesSection />
-      <CashLoanEnrollmentSection />
-      <AISafetySection />
-      <BenefitsSection />
-      <FAQsSection />
-      <TestimonialsSection />
+      <div id="borrower-hero" className="pt-24"><BorrowerHeroSection /></div>
+      <div id="categories" className="pt-24"><LoanCategoriesSection /></div>
+      <div id="enroll" className="pt-24"><CashLoanEnrollmentSection /></div>
+      <div id="ai-safety" className="pt-24"><AISafetySection /></div>
+      <div id="benefits" className="pt-24"><BenefitsSection /></div>
+      <div id="borrower-faqs" className="pt-24"><FAQsSection /></div>
+      <div id="borrower-testimonials" className="pt-24"><TestimonialsSection /></div>
       <Footer />
     </>
   );
