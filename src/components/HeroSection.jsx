@@ -2,9 +2,6 @@ import React from 'react';
 
 const HeroSection = () => {
   return (
-
-    <section className="hero-section">
-
     <section id="hero" className="hero-section">
 
       {/* SVG Decorative Top Shapes */}
@@ -28,7 +25,7 @@ const HeroSection = () => {
         <path fill="#b3d7ff" d="M0,60 C360,160 1080,20 1440,100 L1440,150 L0,150 Z" />
       </svg>
     </section>
-    </section>
+    
   );
 };
 

@@ -1,0 +1,306 @@
+/* Footer.css */
+
+.footer-container {
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #072d6f;
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border-radius: 0 0 8px 8px;
+  font-family: 'Segoe UI', 'sans-serif';
+}
+
+.footer-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 0 3rem;
+  margin: 10px 20px 10px 0px;
+  gap: 2rem;
+  
+}
+
+
+@media (max-width: 768px) {
+  .footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 0 1.5rem;
+    
+  }
+  .footer-block,
+  .footer-block-social,
+  .contact-section,
+  .footer-block-branding {
+    width: 100%;
+    margin-left: 0 !important;     /* 🔑 Reset all left margins */
+    transform: none !important;    /* 🔑 Reset all transforms */
+    padding-left: 0 !important;    /* 🔑 Remove extra padding */
+    text-align: left;
+  }
+  .footer-heading {
+    margin-left: 0;
+  }
+
+  .footer-links li {
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .tagline {
+    margin-left: 0;
+    margin-right: 0;
+    text-align: left;
+  }
+
+  .social-icons-animated {
+    justify-content: flex-start;
+  }
+}
+
+
+    .footer-block-social,
+  .contact-section {
+    text-align: left; /* ✅ Prevent unintentional centering */
+    margin-left: 0;   /* ✅ Remove any custom offsets */
+    transform: none;  /* ✅ Cancel any previous transforms */
+  }
+  .social-icons-animated {
+    justify-content: flex-start; /* ✅ Align icons left under "Follow Us" */
+  }
+
+
+
+.footer-heading{
+  margin-left: 4rem;
+
+  
+}
+.footer-block{
+  flex: 1 1 200px;
+  min-width: 200px;
+   padding-left: 30px; /*pushes entire block right */
+   
+}
+
+
+
+.footer-links li {
+  list-style: none;
+  text-align: left;
+  padding-left: 10px;
+  margin-left: 1rem;
+  font-size: 15px;
+  padding-top: 10px;
+
+}
+.footer-links a{
+  color: white;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 180px;
+  
+}
+
+
+
+
+
+
+
+
+.footer-links a:hover {
+  color: #00e0c5;
+  text-decoration: none;
+}
+
+.footer-logo {
+  width: 180px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+.branding .company-name {
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+.tagline {
+  color: #aaa;
+  font-size: 14px;
+  margin-top: 10px;
+  max-width: 300px;
+  text-align: left;
+  margin: 10px auto;
+}
+@media (max-width: 768px) {
+  .footer-block,
+  .contact-section,
+  .footer-block-social {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+.footer-block-social{
+  /* transform: translateX(-30px); */
+  /* margin-left: -10px; or try -10px to move it more left */
+  flex: 1 1 200px;
+  min-width: 200px;
+}
+
+
+
+
+.contact-section {
+  background-color: #072d6f;
+  color: white;
+  padding-bottom: 8px;
+  border-radius: 6px;
+  max-width: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  margin-left: 5px;
+  ;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 6px 0;
+}
+
+.contact-item i {
+  font-weight: bold;
+  color: #00aced;
+}
+
+.contact-item a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+  color: #00e0c5;
+  text-decoration: underline;
+}
+
+.footer-legal {
+  border-top: 1px solid #444;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+}
+
+.legal-links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.legal-links span {
+  cursor: pointer;
+  color: white;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 1.2;
+  text-align: center;
+  min-width: 80px;
+}
+
+
+.company-name {
+  font-size: 0.9rem;
+  color: #aaa;
+}
+.footer-block-social{
+  margin-left: 100px;
+}
+
+
+
+
+/* Animated Social Media Icons  */
+.social-icons-animated {
+  display: flex;
+  padding: 0;
+  margin-top: 10px;
+  justify-content: flex-start;
+  list-style: none;
+  gap: 15px;
+}
+
+.social-icons-animated li a {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 50px;
+  font-size: 18px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #fff;
+  z-index: 1;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.social-icons-animated li a .icon {
+  position: relative;
+  color: #262626;
+  transition: 0.5s;
+  z-index: 3;
+}
+
+.social-icons-animated li a:hover .icon {
+  color: #fff;
+  transform: rotateY(360deg);
+}
+
+.social-icons-animated li a::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+.social-icons-animated li a:hover::before {
+  top: 0;
+}
+
+/* LinkedIn */
+.social-icons-animated li:nth-child(1) a::before {
+  background: #0077b5;
+}
+
+/* Instagram: gradient fallback to pinkish */
+.social-icons-animated li:nth-child(2) a::before {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+}
+
+/* Twitter */
+.social-icons-animated li:nth-child(3) a::before {
+  background: #1da1f2;
+}

@@ -1,0 +1,200 @@
+:root {
+  --section-bg: #eaf4fc;
+  --card-bg: #ffffff;
+  --text-title: #004d9ad4;
+  --text-body: #555555;
+  --accent-blue: #3498db;
+  --hover-blue: #2980b9;
+  --white: #ffffff;
+  --font-title: 'Montserrat', sans-serif;
+  --font-body: 'Poppins', sans-serif;
+}
+
+.loan-types-section {
+  background-color: var(--section-bg);
+  color: var(--text-title);
+  padding: 4rem 2rem;
+  text-align: center;
+  font-family: var(--font-body);
+}
+
+.loan-types-section h2 {
+  font-family: var(--font-title);
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+  color: #2C3E50;
+}
+
+.loan-subtitle {
+  font-size: 1.1rem;
+  color: var(--text-body);
+  margin-top: -1rem;
+  margin-bottom: 2.5rem;
+  font-family: var(--font-body);
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.loan-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.loan-card {
+  background-color: var(--card-bg);
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+.loan-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+
+.loan-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.loan-icon {
+  font-size: 1.4rem;      
+  color: #1a4f80;        
+  margin-top: 2px;     
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.loan-card:hover .loan-icon {
+  transform: scale(1.2);
+  color: var(--hover-blue); 
+}
+
+
+.loan-title {
+  font-size: 2rem;
+  font-family: var(--font-title);
+  font-weight: 800;
+  margin: 0;
+  color: var(--text-title);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.loan-description {
+  font-size: 0.95rem;
+  color: var(--text-body);
+  margin-bottom: 1.2rem;
+  line-height: 1.4;
+}
+.loan-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.loan-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.loan-card:hover .loan-title {
+  transform: scale(1.1);
+  color: var(--hover-blue);
+}
+
+
+.loan-card-body {
+  flex: 1;
+}
+
+.loan-card h3 {
+  font-size: 1.1rem;
+  font-family: var(--font-title);
+  color: var(--text-title);
+  margin: 0;
+  font-weight: 600;
+}
+
+
+.loan-card p {
+  font-size: 0.95rem;
+  color: var(--text-body);
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.loan-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.loan-buttons button {
+  padding: 0.8rem 1rem;
+  font-weight: 600;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-primary {
+  background-color: var(--accent-blue);
+  color: var(--white);
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: var(--hover-blue);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--accent-blue);
+  border: 2px solid var(--accent-blue);
+}
+
+.btn-secondary:hover {
+  background-color: var(--accent-blue);
+  color: var(--white);
+}
+
+.coming-soon-tag {
+  display: inline-block;
+  background-color: #f39c12;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .loan-types-section h2 {
+    font-size: 2rem;
+  }
+
+  .loan-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .loan-card p {
+    font-size: 0.9rem;
+  }
+}

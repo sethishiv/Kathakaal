@@ -1,4 +1,3 @@
-// src/borrowerComponents/LoanRequestFormSection.jsx
 import React, { useState } from 'react';
 import './LoanRequestFormSection.css'; // Link to external CSS file
 
@@ -14,7 +13,6 @@ const LoanRequestFormSection = ({ loanRequests, addLoanRequest }) => {
   };
 
   return (
-    <section className="loan-request-section">
     <section id="loan-request-form" className="loan-request-section">
       <h2 className="section-title">Apply for a Loan</h2>
       <form className="loan-form" onSubmit={handleSubmit}>
@@ -39,11 +37,13 @@ const LoanRequestFormSection = ({ loanRequests, addLoanRequest }) => {
       <ul className="loan-request-list">
         {loanRequests.map((loan, index) => (
           <li key={index} className="loan-request-item">
-            ₹{loan.amount} at {loan.interest}% — <strong className={loan.status === 'Approved' ? 'approved' : 'pending'}>{loan.status}</strong>
+            ₹{loan.amount} at {loan.interest}% —{' '}
+            <strong className={loan.status === 'Approved' ? 'approved' : 'pending'}>
+              {loan.status}
+            </strong>
           </li>
         ))}
       </ul>
-    </section>
     </section>
   );
 };
