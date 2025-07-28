@@ -13,15 +13,18 @@ import Footer from '../components/Footer';
 const Home = () => {
   return (
     <>
-      <Navbar />
-      <HeroSection />
-      <LenderBorrowerSection />
-      <AISafetySection />
+      {/* <Navbar />
+      <HeroSection /> */}
+      <EasyStepsSection />
       <OffersDataSection />
+      <AISafetySection />
+      <LenderBorrowerSection />
+      
+      
       <LoanTypesSection />
       <TestimonialsSection />
       <FAQsSection />
-      <EasyStepsSection />
+      
       <Footer />
     </>
   );
