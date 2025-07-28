@@ -3,7 +3,6 @@ import React from 'react';
 const HeroSection = () => {
   return (
     <section id="hero" className="hero-section">
-
       {/* SVG Decorative Top Shapes */}
       <svg className="hero-decor-top" viewBox="0 0 1440 150" xmlns="http://www.w3.org/2000/svg">
         <path fill="#cce5ff" d="M0,0 C400,150 1040,0 1440,120 L1440,0 L0,0 Z" />
@@ -25,7 +24,10 @@ const HeroSection = () => {
         <path fill="#b3d7ff" d="M0,60 C360,160 1080,20 1440,100 L1440,150 L0,150 Z" />
       </svg>
     </section>
+<<<<<<< HEAD
     
+=======
+>>>>>>> b947338 (Added testimonials section)
   );
 };
 

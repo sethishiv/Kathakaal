@@ -1,0 +1,155 @@
+/* src/components/TestimonialsSection.css */
+.swiper-slide {
+  height: auto ;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+
+.testimonials-wrapper {
+  max-width: 100%;
+  overflow-x: hidden;
+  padding: 0 1rem; /* helps on small screens */
+  box-sizing: border-box;
+  padding-bottom: 2rem; /* Ensures enough bottom room */
+}
+
+
+#testimonials {
+  overflow: visible;
+  position: relative;
+  z-index: 0;
+}
+
+
+.testimonials-section {
+  background: #f0f8ff;
+  padding: 4rem 2rem;
+  text-align: center;
+  overflow-y: hidden;
+}
+
+.testimonials-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  font-family: 'Montserrat', sans-serif;
+  color: #2c3e50;
+}
+
+.testimonial-subtitle{
+  font-size: 1.1rem;
+  color: #555555;
+  margin-top: -1rem;
+  margin-bottom: 2.5rem;
+  font-family: 'Poppins', sans-serif;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.testimonial-card {
+  margin-bottom: 1.5rem;
+  background: #fff;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+  text-align: center;
+  transform-origin: center top;
+  border: 1px solid transparent;
+  position: relative;
+  z-index: 1;
+  overflow: visible;
+}
+
+.testimonial-card:hover {
+  transform: scale(1.03) ;
+  box-shadow: 0 12px 28px rgba(0, 123, 255, 0.15); /* blue glow */
+  border: 1.5px solid #3498db; /* subtle blue highlight */
+  z-index: 2;
+  background-clip: padding-box;
+}
+
+
+.testimonial-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+
+.testimonial-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.testimonial-rating {
+  color: #f39c12;
+  margin-bottom: 1rem;
+}
+
+.star-icon {
+  margin-right: 2px;
+  font-size: 1rem;
+}
+.star-icon-filled{
+  color: #f39c12;
+}
+.star-icon.half {
+  color: #f39c12; /* bright yellow for half */
+}
+
+.star-icon.empty {
+  color: #dcdcdc; /* light gray */
+}
+
+.testimonial-feedback {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.4;
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+/* Swiper custom styling */
+.swiper-pagination-bullet {
+  background: #3498db;
+  opacity: 0.6;
+}
+
+.swiper-pagination-bullet-active {
+  background: #2980b9;
+}
+
+/* Mobile stacked grid layout for smaller screens */
+/* @media (max-width: 768px) {
+  .swiper-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .swiper-slide {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+
+  .testimonial-card {
+    max-width: 100%;
+    margin: 0 auto;
+    transform: none !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+
+  .testimonial-card:hover {
+    transform: none;
+    box-shadow: 0 6px 16px rgba(52, 152, 219, 0.15);
+  }
+
+  .swiper-pagination {
+    display: none;
+  }
+} */
