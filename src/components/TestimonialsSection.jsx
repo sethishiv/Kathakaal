@@ -1,11 +1,12 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Autoplay } from 'swiper/modules';
+import { Pagination, Autoplay,Keyboard, Navigation  } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 import './TestimonialsSection.css';
-import { FaStar,FaStarHalfAlt, FaRegStar } from 'react-icons/fa';
-
+import { FaStar,FaStarHalfAlt, FaRegStar} from 'react-icons/fa';
+import { FiChevronLeft, FiChevronDown, FiChevronRight } from 'react-icons/fi';
 
 const testimonials = [
   {
@@ -41,6 +42,7 @@ const testimonials = [
 ];
 
 const TestimonialsSection = () => {
+  
   return (
     <section id="testimonials" className='testimonials-section'>
       <h2>What Our User Says</h2>
@@ -48,13 +50,20 @@ const TestimonialsSection = () => {
         <p>Because every story matters</p>
       </div>
       <div className="testimonials-wrapper">
-
+        <div className="swiper-button-prev custom-nav-btn"><FiChevronLeft/></div>
+        <div className="swiper-button-next custom-nav-btn"><FiChevronRight/></div>
       <Swiper
-        modules={[Pagination, Autoplay]}
+        modules={[Pagination, Autoplay,Keyboard, Navigation]}
         spaceBetween={30}
         slidesPerView={1}
         pagination={{ clickable: true }}
         autoplay={{ delay: 5000 }}
+        keyboard={{ enabled: true }}
+        tabIndex={0}
+        navigation={{
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        }}
         breakpoints={{
           768: {
             slidesPerView: 2,
