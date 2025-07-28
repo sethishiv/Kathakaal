@@ -3,6 +3,13 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Borrower from './pages/Borrower';
 import Lender from './pages/Lender';
+import LoanTypesSection from './components/LoanTypesSection';
+import OffersDataSection from './components/OffersDataSection';
+import TestimonialsSection from './components/TestimonialsSection';
+import FAQsSection from './components/FAQsSection';
+import LoanRequestFormSection from './borrowerComponents/LoanRequestFormSection';
+import Navbar from './components/Navbar';
+
 
 function App() {
   const [loanRequests, setLoanRequests] = useState([]);
@@ -41,6 +48,40 @@ function App() {
             />
           }
         />
+        <Route 
+        path="/loan-types" 
+        element={
+        <LoanTypesSection />} />
+        
+        <Route
+        path="/Home"
+        element={<Home />}/>
+        
+        <Route 
+        path="/OffersDataSection"
+        element={<OffersDataSection />} />
+
+        <Route
+        path="/TestimonialsSection"
+        element={<TestimonialsSection />} />
+
+        <Route
+        path="/FAQsSection"
+        element={<FAQsSection />} />
+
+        <Route
+        path="/LoanRequestFormSection"
+        element={
+          <LoanRequestFormSection
+            loanRequests={loanRequests}
+            addLoanRequest={addLoanRequest}
+          />
+        }
+        />
+        
+        
+
+
       </Routes>
    
   );
