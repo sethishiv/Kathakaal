@@ -9,6 +9,7 @@ import TestimonialsSection from './components/TestimonialsSection';
 import FAQsSection from './components/FAQsSection';
 import LoanRequestFormSection from './borrowerComponents/LoanRequestFormSection';
 import Navbar from './components/Navbar';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 
 function App() {
