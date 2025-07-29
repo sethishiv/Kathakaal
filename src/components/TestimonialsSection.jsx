@@ -6,7 +6,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import './TestimonialsSection.css';
 import { FaStar,FaStarHalfAlt, FaRegStar} from 'react-icons/fa';
-import { FiChevronLeft, FiChevronDown, FiChevronRight } from 'react-icons/fi';
+import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 
 const testimonials = [
   {

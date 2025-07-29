@@ -1,25 +1,20 @@
-:root {
-  --section-bg: #eaf4fc;
-  --card-bg: #ffffff;
-  --text-title: #004d9ad4;
-  --text-body: #555555;
-  --accent-blue: #3498db;
-  --hover-blue: #2980b9;
-  --white: #ffffff;
-  --font-title: 'Montserrat', sans-serif;
-  --font-body: 'Poppins', sans-serif;
-}
+  /* Various colours */
+  /* --section-bg: #eaf4fc; */
+  /* --text-title: #004d9ad4; */
+  /* --text-body: #555555; */
+  /* --accent-blue: #3498db; */
+  /* --hover-blue: #2980b9; */
 
 .loan-types-section {
-  background-color: var(--section-bg);
-  color: var(--text-title);
+  background-color: #eaf4fc;
+  color: #004d9ad4;
   padding: 4rem 2rem;
   text-align: center;
-  font-family: var(--font-body);
+  font-family: 'Poppins', sans-serif;
 }
 
 .loan-types-section h2 {
-  font-family: var(--font-title);
+  font-family: 'Montserrat', sans-serif;
   font-size: 2.5rem;
   margin-bottom: 2.5rem;
   color: #2C3E50;
@@ -28,10 +23,10 @@
 
 .loan-subtitle {
   font-size: 1.1rem;
-  color: var(--text-body);
+  color: #555555;
   margin-top: -1rem;
   margin-bottom: 2.5rem;
-  font-family: var(--font-body);
+  font-family: 'Poppins', sans-serif;
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
@@ -48,7 +43,7 @@
 }
 
 .loan-card {
-  background-color: var(--card-bg);
+  background-color: #ffffff;
   border-radius: 1rem;
   padding: 2rem;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
@@ -78,22 +73,22 @@
 
 .loan-card:hover .loan-icon {
   transform: scale(1.2);
-  color: var(--hover-blue); 
+  color:  #2980b9; 
 }
 
 
 .loan-title {
   font-size: 2rem;
-  font-family: var(--font-title);
+  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   margin: 0;
-  color: var(--text-title);
+  color: #004d9ad4;
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .loan-description {
   font-size: 0.95rem;
-  color: var(--text-body);
+  color: #555555;
   margin-bottom: 1.2rem;
   line-height: 1.4;
 }
@@ -111,7 +106,7 @@
 
 .loan-card:hover .loan-title {
   transform: scale(1.1);
-  color: var(--hover-blue);
+  color:  #2980b9;
 }
 
 
@@ -121,8 +116,8 @@
 
 .loan-card h3 {
   font-size: 1.1rem;
-  font-family: var(--font-title);
-  color: var(--text-title);
+  font-family: 'Montserrat', sans-serif;
+  color: #004d9ad4;
   margin: 0;
   font-weight: 800;
 }
@@ -130,7 +125,7 @@
 
 .loan-card p {
   font-size: 0.95rem;
-  color: var(--text-body);
+  color: #555555;
   margin-bottom: 1.5rem;
   line-height: 1.5;
 }
@@ -146,32 +141,32 @@
 .loan-buttons button {
   padding: 0.8rem 1rem;
   font-weight: 600;
-  font-family: var(--font-body);
+  font-family: 'Poppins', sans-serif;
   font-size: 0.95rem;
   border-radius: 0.5rem;
   cursor: pointer;
   transition: background-color 0.2s ease;
 }
-
+/* Apply Now */
 .btn-primary {
-  background-color: var(--accent-blue);
-  color: var(--white);
+  background-color:#3498db;
+  color: #ffffff;
   border: none;
 }
 
 .btn-primary:hover {
-  background-color: var(--hover-blue);
+  background-color:  #2980b9;
 }
-
+/* Know More */
 .btn-secondary {
   background-color: transparent;
-  color: var(--accent-blue);
-  border: 2px solid var(--accent-blue);
+  color: #3498db;
+  border: 2px solid #3498db;
 }
 
 .btn-secondary:hover {
-  background-color: var(--accent-blue);
-  color: var(--white);
+  background-color: #3498db;
+  color: #ffffff;
 }
 
 .coming-soon-tag {
