@@ -13,8 +13,9 @@ import Footer from '../components/Footer';
 const Home = () => {
   return (
     <>
-      {/* <Navbar />
-      <HeroSection /> */}
+      <Navbar />
+      
+      <HeroSection />
       <EasyStepsSection />
       <OffersDataSection />
       <AISafetySection />
