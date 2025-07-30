@@ -2,36 +2,177 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
   padding: 1rem 2rem;
-  background-color: #ffffff; /* White background */
-  border-bottom: 1px solid #e5e5e5; /* Subtle bottom border */
+  background-color: #ffffff;
+  color: #252121;
   position: sticky;
   top: 0;
   z-index: 1000;
+  box-shadow: 0 2px 4px rgba(36, 102, 201, 0.2);
 }
 
 .logo {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: bold;
-  color: #004aad; /* Brand primary color */
+  color: #003366;
+}
+
+.menuIcon {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: #004aad;
 }
 
 .navLinks {
   list-style: none;
   display: flex;
   gap: 1.5rem;
-  margin: 0;
-  padding: 0;
 }
 
-.navLinks li a {
+.navLinks li a, 
+.navLinks li Link {
   text-decoration: none;
-  color: #333333; /* Dark text for links */
-  font-weight: 500;
+  color: #000000;
+  font-size: 1rem;
   transition: color 0.3s ease;
 }
 
-.navLinks li a:hover {
-  color: #004aad; /* Brand color on hover */
+.navLinks li:hover > a {
+  color: #004aad;
 }
+<<<<<<< HEAD
+=======
+
+/* Dropdown menu
+.dropdown {
+  position: relative;
+}
+
+.dropdownContent {
+  position: absolute;
+  top: 2.5rem;
+  left: 0;
+  background-color: #f7f4f4;
+  padding: 0.5rem 0;
+  display: none;
+  flex-direction: column;
+  min-width: 200px;
+  border: 1px solid #291cd3;
+  border-radius: 4px;
+  z-index: 999;
+}
+
+.dropdown:hover .dropdownContent,
+.dropdownContent:hover {
+  display: flex;
+}
+
+.dropdownContent li {
+  padding: 0.6rem 1rem;
+  white-space: nowrap;
+}
+
+.dropdownContent li a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.dropdownContent li:hover {
+  background-color: #333;
+}
+
+.dropdownContent li:hover a {
+  color: #ffd700;
+} */
+ /* Dropdown parent */
+.dropdown {
+  position: relative;
+}
+
+/* Child dropdown content */
+.dropdownContent {
+  position: absolute;
+  top: 100%; /* Directly below parent */
+  left: 0;
+  background-color: #f7f4f4;
+  padding: 0.5rem 0;
+  display: none;
+  flex-direction: column;
+  min-width: 200px;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  z-index: 999;
+  pointer-events: auto;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdownContent {
+  display: flex;
+}
+
+/* Maintain display when hovering over dropdownContent */
+.dropdownContent:hover {
+  display: flex;
+}
+
+/* Ensure no gaps on hover */
+.dropdownContent li {
+  padding: 0.6rem 1rem;
+  white-space: nowrap;
+}
+
+.dropdownContent li a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.dropdownContent li:hover {
+  background-color: #ffffff;
+}
+
+.dropdownContent li:hover a {
+  color: #004aad;
+}
+
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .menuIcon {
+    display: block;
+  }
+
+  .navLinks {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    background-color: #f8f5f5;
+    padding: 1rem 0;
+    border-top: 1px solid #333;
+  }
+
+  .mobileActive {
+    display: flex;
+  }
+
+  .navLinks li {
+    padding: 0.6rem 1.5rem;
+    border-top: 1px solid #222;
+  }
+
+  .dropdownContent {
+    position: static;
+    display: none !important;
+  }
+
+  /* Optional: make dropdowns show in mobile */
+  .dropdown:hover .dropdownContent {
+    display: none !important;
+  }
+}
+>>>>>>> 3fe6821 (mobile menu)
