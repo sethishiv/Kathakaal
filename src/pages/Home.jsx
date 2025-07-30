@@ -14,21 +14,22 @@ const Home = () => {
   return (
     <>
       <Navbar />
-      
       <HeroSection />
+      <LenderBorrowerSection />
+      <LoanTypesSection />
       <EasyStepsSection />
       <OffersDataSection />
       <AISafetySection />
-      <LenderBorrowerSection />
-      
-      
-      <LoanTypesSection />
       <TestimonialsSection />
       <FAQsSection />
-      
       <Footer />
     </>
   );
 };
-
 export default Home;
+      
+      
+      
+      
+      
+

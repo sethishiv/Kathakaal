@@ -1,0 +1,65 @@
+.lender-borrower-section {
+  padding: 60px 20px;
+  background-color: #eaf4fc;
+  text-align: center;
+}
+
+.section-header h2 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.section-header p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.roles-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.role-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  padding: 30px 20px;
+  width: 300px;
+  text-align: left;
+  transition: transform 0.3s ease;
+  /* //just for experiment purpose */
+  transform: rotate(-1.5deg);  
+  overflow: hidden;
+  position: relative;
+}
+
+.role-card > * {
+  transform: rotate(1.5deg); 
+}
+
+
+.role-card:hover {
+  transform: translateY(-5px);
+}
+
+.role-card h3 {
+  font-size: 24px;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.role-card ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.role-card li {
+  margin-bottom: 12px;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+}
